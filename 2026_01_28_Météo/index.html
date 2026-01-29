@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Météo - Formulaire saisie lieu</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div id="formulaire">
+            <form action="" method="post">
+                <h3 class=".grape-nuts-regular">
+                    Entrer le nom d'une ville ou d'un pays :
+                </h3>
+                <div id="inputLieu">
+                    <input
+                        class=".grape-nuts-regular"
+                        type="text"
+                        id="location"
+                        placeholder="Tours"
+                        required
+                    />
+                </div>
+                <button
+                    id="btn-submit"
+                    class=".grape-nuts-regular"
+                    type="button"
+                >
+                    Charger la météo
+                </button>
+            </form>
+        </div>
+        <div id="meteo">
+            <div id="image">
+                <img src="" alt="Image" />
+            </div>
+            <div id="lieu">
+                <p class=".grape-nuts-regular" id="coordonnees">
+                    Localité, Région, Pays
+                </p>
+                <div id="stats-container">
+                    <div id="humidity" class=".grape-nuts-regular">
+                        <p>humidity:</p>
+                    </div>
+                    <div id="temperature" class=".grape-nuts-regular">
+                        <p>Temperature:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
